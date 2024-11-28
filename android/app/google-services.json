@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "535030909039",
+    "project_id": "car-rental-app-ecedc",
+    "storage_bucket": "car-rental-app-ecedc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535030909039:android:f5b493e6ac3b478f1de59a",
+        "android_client_info": {
+          "package_name": "com.app.carrental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhy4UzM6apSWjCNkvdDcuwH9wlRlVJL2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535030909039:android:f63ede19fad615261de59a",
+        "android_client_info": {
+          "package_name": "com.myapp.carrental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhy4UzM6apSWjCNkvdDcuwH9wlRlVJL2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
