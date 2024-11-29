@@ -9,7 +9,7 @@ class OnboardingPage extends StatelessWidget {
     
     return  Scaffold(
       
-      backgroundColor: Color(0xff2c2834),
+      backgroundColor: const Color(0xff2c2834),
       
       body:Column(
         
@@ -56,7 +56,7 @@ class OnboardingPage extends StatelessWidget {
                     
                       
                     ),
-                    child:Text('Let\'s Go') ),),
+                    child:const Text('Let\'s Go') ),),
                 ],
                 ),
             ),

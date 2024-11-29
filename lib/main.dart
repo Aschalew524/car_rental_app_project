@@ -1,11 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rentapp/firebase_options.dart';
-import 'package:rentapp/onboarding_page.dart';
 import 'package:rentapp/presentation/pages/car_details_page.dart';
-import 'package:rentapp/presentation/pages/car_list_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
