@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rentapp/firebase_options.dart';
 import 'package:rentapp/onboarding_page.dart';
+import 'package:rentapp/presentation/pages/car_details_page.dart';
 import 'package:rentapp/presentation/pages/car_list_screen.dart';
 
 void main() async {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: CarListScreen(),
+        home: CardetailsPage(),
       );
   }
 }
