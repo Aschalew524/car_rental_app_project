@@ -4,7 +4,8 @@ import 'package:rentapp/presentation/widgets/car_card.dart';
 import 'package:rentapp/presentation/widgets/more_card.dart';
 
 class CardetailsPage extends StatelessWidget{
-  const CardetailsPage({super.key});
+  final Car car;
+  const CardetailsPage({super.key,  required this.car});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class CardetailsPage extends StatelessWidget{
       ),
       body: Column(
         children: [
-          CarCard(car: Car(model: "Fortuner GR", distance: 870, fuelCapacity: 50, pricePerHour: 20)),
+          CarCard(car: Car(model: car.model, distance: car.distance, fuelCapacity: car.fuelCapacity, pricePerHour: car.pricePerHour)),
           const SizedBox(height: 20,),
          Padding(
            padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -84,14 +85,14 @@ class CardetailsPage extends StatelessWidget{
            ),
          ),
          Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
            child: Column(
             children: [
-              MoreCard(car: Car(model: "Fortuner GR", distance: 870, fuelCapacity: 50, pricePerHour: 20)),
-              SizedBox(height: 10,),
-              MoreCard(car: Car(model: "Fortuner GR", distance: 870, fuelCapacity: 50, pricePerHour: 20)),
-              SizedBox(height: 10,),
-              MoreCard(car: Car(model: "Fortuner GR", distance: 870, fuelCapacity: 50, pricePerHour: 20)),
+              MoreCard(car: Car(model: car.model, distance: car.distance, fuelCapacity: car.fuelCapacity, pricePerHour: car.pricePerHour)),
+              const SizedBox(height: 10,),
+              MoreCard(car: Car(model: car.model, distance: car.distance, fuelCapacity: car.fuelCapacity, pricePerHour: car.pricePerHour)),
+              const SizedBox(height: 10,),
+              MoreCard(car: Car(model: car.model, distance: car.distance, fuelCapacity: car.fuelCapacity, pricePerHour: car.pricePerHour)),
             ],
            ),
          )
