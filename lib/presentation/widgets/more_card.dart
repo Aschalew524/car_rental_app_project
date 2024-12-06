@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rentapp/data_models/carr.dart';
+import 'package:rentapp/data/models/carr.dart';
 
 
 class MoreCard extends StatelessWidget {

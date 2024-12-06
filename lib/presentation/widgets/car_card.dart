@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rentapp/data_models/carr.dart';
+import 'package:rentapp/data/models/carr.dart';
 import 'package:rentapp/presentation/pages/car_details_page.dart';
 
 
