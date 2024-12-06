@@ -1,14 +1,15 @@
-import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart' as firebase_core;
 import 'package:flutter/material.dart';
 import 'package:rentapp/data_models/carr.dart';
 import 'package:rentapp/firebase_options.dart';
 import 'package:rentapp/onboarding_page.dart';
 import 'package:rentapp/presentation/pages/car_details_page.dart';
 import 'package:rentapp/presentation/pages/car_list_screen.dart';
+import 'package:rentapp/presentation/pages/maps_detail_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
+  await firebase_core.Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform
   );
   
@@ -24,10 +25,18 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
         routes:  {
           '/home': (context) =>  CarListScreen(),
-          
-          '/detail': (context) => CardetailsPage(car: Car(model: 'v12', distance: 400, fuelCapacity: 24, pricePerHour: 85)), // Provide a valid Car object
+          '/detail': (context) => CardetailsPage(car: Car(model: 'v12', distance: 400, fuelCapacity: 24, pricePerHour: 2)), 
+          '/onboarding': (context) => const OnboardingPage(),
+          //'/map_detail':(context) => MapsDetailsPage(car: Car(model: 'v12', distance: 400, fuelCapacity: 24, pricePerHour: 2)),
+          // Provide a valid Car object
         },
-        home: const OnboardingPage(),
+        home:
+        //MapsDetailsPage(car: Car(model: 'v12', distance: 400, fuelCapacity: 24, pricePerHour: 2)),
+        // CardetailsPage(car: Car(model: 'v12', distance: 400, fuelCapacity: 24, pricePerHour: 2)), // Provide a valid Car object
+        const MapsDetailsPage(),
+
+        // Provide a valid Car object
+
       );
   }
 }

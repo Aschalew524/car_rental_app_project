@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rentapp/data_models/carr.dart';
+import 'package:rentapp/presentation/pages/car_details_page.dart';
+
 
 
 class CarCard extends StatelessWidget {
@@ -11,10 +13,10 @@ class CarCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        /* Navigator.push(
+        Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => CardDetailsPage(car: car,))
-        ); */
+            MaterialPageRoute(builder: (context) => CardetailsPage(car: car,))
+        ); 
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
